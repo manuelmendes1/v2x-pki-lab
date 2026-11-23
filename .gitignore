@@ -1,0 +1,39 @@
+# Never commit credential payloads from the operational directories.
+/pki/domains/**/authorities/**
+/pki/domains/**/trust-store/**
+/pki/domains/**/revocation/**
+/pki/domains/**/issued-tickets/**
+/protocols/**/credentials/**
+
+# Keep structural placeholders and documentation trackable.
+!**/README.md
+!**/.gitkeep
+
+# Private key containers and generated binary/build artefacts.
+*.key
+*.pem
+*.p8
+*.pk8
+*.p12
+*.pfx
+*.der
+*.oer
+*.p7b
+*.p7c
+*.log
+/build/
+/build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/lab.env
+
+# Generated PKI issuance artefacts — never publish
+/pki/domains/**/issuance/runs/
+*.cert
+*.crl
+*.csr
+
+# Python generated artefacts
+__pycache__/
+*.py[cod]
+.pytest_cache/

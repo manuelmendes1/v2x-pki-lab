@@ -1,0 +1,9 @@
+protocol: cam
+aid: 36
+security_domain: vehicle-v3
+status: rework-required
+credential_scope: vehicle
+requires_aids_on_active_at: [36, 37]
+notes:
+  - Current signer is shared with DENM and validates the active credential for both AID 36 and AID 37.
+  - A DENM-only AT must not be treated as CAM-authorized.

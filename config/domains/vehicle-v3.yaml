@@ -1,0 +1,13 @@
+domain: vehicle-v3
+status: blocked
+protocols: [cam, denm]
+root_path: pki/domains/vehicle-v3/authorities/root
+aa_path: pki/domains/vehicle-v3/authorities/aa
+trust_store_path: pki/domains/vehicle-v3/trust-store
+revocation_path: pki/domains/vehicle-v3/revocation
+required_issuance_aids: [36, 37]
+notes:
+  - CAM and DENM share the vehicle signing/trust domain in the current project architecture.
+  - Root and AA must explicitly permit issuance for the application scope being delegated.
+  - The active credential used by the shared signer must explicitly authorize the AID being signed.
+  - For one active dual-protocol credential, require both AID 36 and AID 37 on the AT.

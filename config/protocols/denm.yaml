@@ -1,0 +1,9 @@
+protocol: denm
+aid: 37
+security_domain: vehicle-v3
+status: rework-required
+credential_scope: vehicle
+requires_aids_on_active_at: [36, 37]
+notes:
+  - Current signer is shared with CAM.
+  - The historical 100-AT fixture is cryptographically verified but expired as of 2026-11-22.

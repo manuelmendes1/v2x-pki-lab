@@ -1,0 +1,10 @@
+domain: cpm-v3
+status: blocked
+protocols: [cpm]
+root_path: pki/domains/cpm-v3/authorities/root
+aa_path: pki/domains/cpm-v3/authorities/aa
+trust_store_path: pki/domains/cpm-v3/trust-store
+revocation_path: pki/domains/cpm-v3/revocation
+required_issuance_aids: [639]
+notes:
+  - CPM uses a separate PKI domain in the current project architecture.

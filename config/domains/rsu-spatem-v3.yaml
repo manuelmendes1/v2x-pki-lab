@@ -1,0 +1,11 @@
+domain: rsu-spatem-v3
+status: blocked
+protocols: [spatem]
+root_path: pki/domains/rsu-spatem-v3/authorities/root
+aa_path: pki/domains/rsu-spatem-v3/authorities/aa
+trust_store_path: pki/domains/rsu-spatem-v3/trust-store
+revocation_path: pki/domains/rsu-spatem-v3/revocation
+required_issuance_aids: [137]
+notes:
+  - RSU trust domain; do not reuse vehicle credentials.
+  - Keep stationId separate from GN_ADDR.MID and Link MAC.

@@ -1,0 +1,9 @@
+protocol: spatem
+aid: 137
+security_domain: rsu-spatem-v3
+status: blocked
+credential_scope: rsu
+requires_aids_on_active_at: [137]
+notes:
+  - RSU-only credential scope.
+  - Keep RSU identity separate from vehicle identity.

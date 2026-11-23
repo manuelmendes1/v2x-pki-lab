@@ -1,0 +1,8 @@
+protocol: vam
+aid: 638
+security_domain: unassigned
+status: unsupported
+issuance_enabled: false
+notes:
+  - AID 638 is the current project mapping, but VAM security support is not established.
+  - Do not create or issue VAM credentials until source/runtime support and normative AID mapping are confirmed.

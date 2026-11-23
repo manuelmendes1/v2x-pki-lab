@@ -1,0 +1,8 @@
+protocol: cpm
+aid: 639
+security_domain: cpm-v3
+status: blocked
+credential_scope: cpm
+requires_aids_on_active_at: [639]
+notes:
+  - Keep CPM credentials in its own trust domain.
